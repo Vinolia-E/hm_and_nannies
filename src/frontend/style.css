@@ -115,3 +115,33 @@ footer {
   background-color: var(--white);
 }
 
+.auth-form {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-form label {
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+.auth-form input {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid var(--charcoal);
+  font-size: 1rem;
+}
+
+.auth-form input:focus {
+  outline: 2px solid var(--tarceise);
+}
+
+
