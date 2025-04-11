@@ -52,7 +52,7 @@ body {
 .primary-btn,
 .secondary-btn {
   padding: 1rem 2rem;
-  border: none;
+  border: var(--white);
   border-radius: 12px;
   font-size: 1rem;
   cursor: pointer;
@@ -65,7 +65,7 @@ body {
 }
 
 .primary-btn:hover {
-  background-color: #2ac5ba;
+  background-color: var(--white);
 }
 
 .secondary-btn {
@@ -74,7 +74,7 @@ body {
 }
 
 .secondary-btn:hover {
-  background-color: #111;
+  background-color: var(--white);
 }
 
 footer {
@@ -83,3 +83,33 @@ footer {
   background-color: var(--tarceise);
   font-size: 0.9rem;
 }
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  padding: 0.5rem 1.2rem;
+  background-color: var(--light-pink);
+  color: var(--charcoal);
+  border: 2px solid var(--white);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: var(--white);
+}
+
