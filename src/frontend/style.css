@@ -32,7 +32,7 @@ body {
 
 .landing {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 4rem 1rem;
   text-align: center;
@@ -144,4 +144,35 @@ footer {
   outline: 2px solid var(--tarceise);
 }
 
+/* Handling responsiveness */
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-buttons {
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .auth-form {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .cta h2 {
+    font-size: 1.2rem;
+  }
+}
 
