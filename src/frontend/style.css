@@ -1,31 +1,85 @@
-root {
-    --tarceise: #40e0d0;
-    --light-pink: #ffd1dc;
-    --charcoal: #333333;
-    --warm-sand: #fef9ef;
-    --white: #ffffff;
-  }
-  
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--warm-sand);
-    color: var(--charcoal);
-  }
-  
-  header {
-    text-align: center;
-    padding: 3rem 1rem;
-    background-color: var(--light-pink);
-  }
-  
-  .primary-btn {
-    background-color: var(--tarceise);
-    color: var(--white);
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
+:root {
+  --tarceise: #40e0d0;
+  --light-pink: #ffd1dc;
+  --charcoal: #333333;
+  --warm-sand: #fef9ef;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--warm-sand);
+  color: var(--charcoal);
+}
+
+.site-header {
+  background-color: var(--tarceise);
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.site-header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background-color: var(--light-pink);
+  color: var(--charcoal);
+}
+
+.primary-btn:hover {
+  background-color: #2ac5ba;
+}
+
+.secondary-btn {
+  background-color: var(--light-pink);
+  color: var(--charcoal);
+}
+
+.secondary-btn:hover {
+  background-color: #111;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--tarceise);
+  font-size: 0.9rem;
+}
