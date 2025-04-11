@@ -9,7 +9,7 @@
 <body>
   <header class="site-header">
     <div class="header-content">
-      <h1>👩🏽‍🍼 HM & Nannies</h1>
+      <h1>🏡 HM & Nannies 👩🏽‍🍼</h1>
     </div>
   </header>
 
@@ -36,3 +36,17 @@
   </footer>
 </body>
 </html>
+
+<!-- Redirect to dashboard -->
+
+<script>
+  document.getElementById("login-form")?.addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent actual form submission
+    window.location.href = "dashboard.html"; // redirect to dashboard
+  });
+
+  document.getElementById("signup-form")?.addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent actual form submission
+    window.location.href = "dashboard.html"; // redirect to dashboard
+  });
+</script>

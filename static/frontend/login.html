@@ -16,6 +16,10 @@
   <main class="landing">
     <div class="cta">
       <h2>Login to Your Account</h2>
+      <!-- <form id="signup-form"> -->
+        <!-- form inputs here -->
+      <!-- </form> -->
+      
       <form class="auth-form">
         <label for="email">Email</label>
         <input type="email" id="email" placeholder="you@example.com" required /> 
@@ -33,3 +37,17 @@
   </footer>
 </body>
 </html>
+
+<!-- Redirect to dashboard -->
+
+<script>
+  document.getElementById("login-form")?.addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent actual form submission
+    window.location.href = "dashboard.html"; // redirect to dashboard
+  });
+
+  document.getElementById("signup-form")?.addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent actual form submission
+    window.location.href = "dashboard.html"; // redirect to dashboard
+  });
+</script>
